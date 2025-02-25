@@ -39,4 +39,6 @@ public class Greeting {
     public void setMessage(){
         this.message = message;
     }
+
+
 }
