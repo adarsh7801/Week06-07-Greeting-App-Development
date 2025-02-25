@@ -40,5 +40,7 @@ public class Greeting {
         this.message = message;
     }
 
-
+    public void setMessage(String newMessage){
+        this.message = message;
+    }
 }
