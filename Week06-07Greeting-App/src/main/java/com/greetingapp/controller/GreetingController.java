@@ -63,4 +63,11 @@ public class GreetingController {
         return new Greeting(message);
     }
 
+    //UC5
+    @GetMapping("/findgreeting/{id}")
+    public Greeting findGreetingById(@PathVariable Long id) {
+        return greetingService.getGreetingById(id)
+                .orElseThrow(() -> new RuntimeException("Greeting not found with ID: " + id));
+    }
+
 }
